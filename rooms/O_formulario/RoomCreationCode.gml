@@ -9,7 +9,7 @@ if (keyboard_check_pressed(vk_backspace)) {
 
 if (keyboard_check_pressed(vk_enter)) {
     // Quando o jogador pressionar Enter, faça o cadastro
-    cadastro();
+    formulario();
 }
 
 // Adiciona o texto digitado ao nome de usuário

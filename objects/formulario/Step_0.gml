@@ -1,8 +1,9 @@
 // Apagar
 if (keyboard_check_pressed(vk_backspace)) {
-    if (string_length(global.username) > 0) {
+	var nome= global.username
+    if (string_length(nome) > 0) {
         // Apagar o último caractere do nome de usuário
-        global.username = string_delete(global.username, string_length(global.username), 1);
+        global.username = string_delete(nome, string_length(nome), 1);
     }
 }
 
@@ -18,4 +19,5 @@ if (keyboard_string != "") {
 // Acionar o cadastro
 if (keyboard_check_pressed(vk_enter)) {
     cadastro_user();
+	
 }
